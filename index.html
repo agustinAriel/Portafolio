@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ariel Barros</title>
+</head>
+<body>
+    <!-------------Header ------------->
+    <header class="navbar">
+        <div class="barra">
+            <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+           <div class="menu1">
+                <a href="#home">Inicio</a>
+                <a href="#home">Sobre Mi</a>
+           </div>
+
+           <div class="logo">
+                <img src="img/a.png" alt="Logo Ariel Barros">
+           </div>
+
+           <div class="menu2">
+                <a href="#proyectos">Servicios</a>
+                <a href="#contact">Contacto</a>
+           </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <div class="mobile-menu-content">
+                <div class="mobile-logo">
+                    <img src="img/a.png" alt="Logo Ariel Barros">
+                </div>
+                <nav class="mobile-nav">
+                    <a href="#home">Inicio</a>
+                    <a href="#home">Sobre Mi</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#technology">Tecnología</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+                <div class="mobile-socials">
+                    <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/tu_numero" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/tu_usuario" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-------------Home ------------->
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="home_info">
+                    <div>
+                        <h2>Hola, soy</h2>
+                        <h1>Ariel Barros</h1>
+                        <img  src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=730688&width=435&lines=Estudiante+de+Ing.+Inform%C3%A1tica+;Web+Designer+Junior;HTML+%C2%B7+CSS+%C2%B7+JavaScrip;%F0%9F%A7%89]https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=000000&center=true&width=435&lines=Estudiante+de+Ing.+Inform%C3%A1tica+;Web+Designer+Junior;HTML+%C2%B7+CSS+%C2%B7+JavaScrip;%F0%9F%A7%89" alt="Typing Animation" />
+                        <p>Diseño y desarrollo sitios web modernos, rápidos y funcionales que ayudan a marcas y negocios a crecer en el mundo digital.</p>
+                        <div class="botones">
+                            <a href="#" >Ver Proyectos</a>
+                            <a href="#" >Descargar CV</a>
+                        </div>
+                        
+                    </div>
+                </div>  
+                <div class="home_img">
+                    <div class="img">
+                        <img src="img/ArielPerfil.png" alt="Ariel Barros">
+                    </div>
+                </div> 
+                <div class="home_btn">
+                        <hr class="linea-divisoria">
+                        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener" aria-label="Visitar nuestro Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                        <a href="https://wa.me/tu_numero" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        
+                        <a href="https://github.com/tu_usuario" target="_blank" rel="noopener" aria-label="Visitar nuestro GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <hr class="linea-divisoria">
+                </div>             
+            </div>
+        </section>
+    <!-----------Projects Section ------------->
+        <h1 class="projects-title" id="proyectos">Proyectos</h1>
+        <div class="stage" id="stage">
+        <!-- background crossfade layers injected por JS -->
+        <div class="bg-pool" id="bgPool"></div>
+        <div class="panel">
+            <div class="panel-text" id="panelText">
+            <div class="eyebrow-row"><div class="rule"></div><span class="eyebrow" id="eyebrow"></span></div>
+            <h1 class="title" id="title"></h1>
+            <p class="desc" id="desc"></p>
+            <a class="cta" id="ctaBtn" href="#" target="_blank" rel="noopener noreferrer">Descubrir WEB
+                <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#0a0807" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+            </a>
+            </div>
+        </div>
+
+        <div class="deck-wrap">
+            <div class="deck" id="deck"></div>
+        </div>
+
+        <div class="controls">
+            <div class="arrows">
+            <button class="arrow-btn" id="prevBtn" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="arrow-btn" id="nextBtn" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            </div>
+            <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            <div class="counter"><b id="counterNow">01</b> / <span id="counterTotal">06</span></div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    <!------------technology and education------------->
+        <section class="technology" id="technology">
+            <h2> HERRAMINETAS Y EDUCACIÓN</h2>
+            <div class="herramientas">
+                <div class="front-end">
+                    <h2>Desarrollo Core (Front-end Nativo)</h2>
+                    <div class="conten">
+                        <div class="logo-tec">
+                            <img src="img/html.png" alt="HTML">
+                        </div>
+                        <div class="tecno">
+                            <h1>HTML</h1>
+                            <p>Lenguaje de marcado utilizado para estructurar y presentar contenido en la web.</p>
+                        </div>
+                        <div class="logo-tec">
+                            <img src="img/js.png" alt="JavaScript">
+                        </div>
+                        <div class="tecno">
+                            <h1>JavaScript</h1>
+                            <p>Lenguaje de programación utilizado para crear interactividad en la web.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="maquetacion">
+                    <h2>CMS & Maquetación Rápida</h2>
+                    <div class="conten">
+                        <div class="logo-tec">
+                            <img src="img/wordpress.png" alt="WordPress">
+                        </div>
+                        <div class="tecno">
+                            <h1>WordPress</h1>
+                            <p>Plataforma de gestión de contenidos utilizada para crear y gestionar sitios web.</p>
+                        </div>
+
+                        <div class="logo-tec">
+                            <img src="img/003-figma.png" alt="Figma">
+                        </div>
+                        <div class="tecno">
+                            <h1>Figma</h1>
+                            <p>Plataforma de gestión de contenidos utilizada para crear y gestionar sitios web.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="back-end">
+                    <h2>Desarrollo Back-end</h2>
+                    <div class="conten">
+                        <div class="logo-tec">
+                            <img src="img/001-github.png" alt="Git">
+                        </div>
+                        <div class="tecno">
+                            <h1>Git</h1>
+                            <p>Sistema de control de versiones distribuido utilizado para gestionar el desarrollo de software.</p>
+                        </div>
+
+                        <div class="logo-tec">
+                            <img src="img/002-py.png" alt="Python">
+                        </div>
+                        <div class="tecno">
+                            <h1>Python</h1>
+                            <p>Lenguaje de programación de alto nivel utilizado para desarrollar aplicaciones web y de data science.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+                <section id="educacion">
+                    <div class="timeline">
+                        <!-- Bloque 1: Universidad (Actual) -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">05/2024 - Presente</div>
+                            <div class="timeline-content">
+                                <h3>Ingeniería Informática</h3>
+                                <p class="institucion">Universidad de Buenos Aires (UBA)</p>
+                                <p class="descripcion">Formación de grado enfocada en desarrollo de software, algoritmos y bases de la computación.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">05/2026 - Presente</div>
+                            <div class="timeline-content">
+                                <h3>Análisis de Sistemas</h3>
+                                <p class="institucion">Universidad de Buenos Aires (UBA)</p>
+                                <p class="descripcion">Formación de grado enfocada en desarrollo de software, algoritmos y bases de la computación.</p>
+                            </div>
+                        </div>
+
+                        <!-- Bloque 2: Formación Complementaria -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Trayectoria</div>
+                            <div class="timeline-content">
+                                <h3>Data Analytics</h3>
+                                <p class="institucion">Formación Técnica Especializada</p>
+                                <p class="descripcion">Especialización en análisis de requisitos, modelado de bases de datos y procesamiento de datos para la toma de decisiones.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Trayectoria</div>
+                            <div class="timeline-content">
+                                <h3>Testing QA</h3>
+                                <p class="institucion">Formación Técnica Especializada</p>
+                                <p class="descripcion">Especialización en análisis de requisitos, modelado de bases de datos y procesamiento de datos para la toma de decisiones.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+        </section>
+
+    <!-------Contacto------------>
+        <section id="contact">
+            <div class="contact">
+                <div class="cont-msj">
+                    <img src="img/contacto.png" alt="Logo de mensaje">
+                    <h3>¡Conectemos!</h3>
+                    <p>Si eres una empresa buscando incorporar un diseñador web a su plantilla, o si tienes una idea para un proyecto independiente, escríbeme. Estoy abierto a oportunidades a tiempo completo, colaboraciones freelance y nuevos desafíos.</p>
+                </div>
+                <div class="cont-icon">
+                    <div class="home-btn-foot">
+                        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener" aria-label="Visitar nuestro Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                        <a href="https://wa.me/tu_numero" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        
+                        <a href="https://github.com/tu_usuario" target="_blank" rel="noopener" aria-label="Visitar nuestro GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="copy">
+                        <img src="img/a.png" alt="Lodo de Ariel">
+                        <p>© Ariel Barros 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
