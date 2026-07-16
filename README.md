@@ -8,5 +8,4 @@
 * Git y GitHub
 
 ## 📬 Contacto
-* **Web:** [Tu Sitio Web](https://tudominio.com)
-* **LinkedIn:** [Tu Nombre](https://linkedin.com/in/tu-usuario)
+* **LinkedIn:** [ARIEL BARROS](www.linkedin.com/in/arielbarros2000)
