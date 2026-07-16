@@ -43,9 +43,17 @@ img{ max-width: 100%; height: auto; display: block; }
     color: #000;
     text-shadow: 2px 2px 4px rgb(0, 153, 255);
 }
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
 .logo img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: block;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -144,10 +152,11 @@ body.menu-open{
     overflow: hidden;
 }
 .home-content{
-    margin-top: 150px;
+    margin-top: 180px;
     min-height: 90vh;
     padding: 0 150px;
     display: flex;
+    align-items: center;
 }
 .home_info{
     width: 50%;
@@ -496,7 +505,7 @@ body.menu-open{
     height: 100%;
     background: #ffffff;
     margin-bottom: 15px;
-    padding: 20px;
+    padding: 22px 20px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 .conten{
@@ -504,7 +513,7 @@ body.menu-open{
     height: 100%;
     display: grid;
     grid-template-columns: 84px 1fr;
-    gap: 14px 20px;
+    gap: 14px 18px;
     align-items: start;
 } 
 .logo-tec{
@@ -524,6 +533,10 @@ body.menu-open{
 }
 .tecno{
     padding: 2px 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 .tecno h1{
     font-family: 'Courier New', Courier, monospace;
@@ -535,6 +548,7 @@ body.menu-open{
     color: #374151;
     margin: 0;
     line-height: 1.5;
+    max-width: 320px;
 }
 
 @media (max-width: 1100px){
