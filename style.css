@@ -239,6 +239,31 @@ body.menu-open{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* EL EFECTO DE DIFUMINADO EN LA PARTE INFERIOR */
+
+    /* Prefijo para navegadores basados en WebKit (Chrome, Safari, Edge moderno) */
+    -webkit-mask-image: linear-gradient(
+        to bottom,                     /* Dirección: de arriba hacia abajo */
+        black 60%,                   /* La imagen es completamente sólida hasta el 60% */
+        rgba(0, 0, 0, 0.4) 85%,     /* Comienza a suavizarse */
+        transparent 100%               /* Se vuelve completamente transparente al final */
+    );
+
+    /* Propiedad estándar (para compatibilidad futura) */
+    mask-image: linear-gradient(
+        to bottom,
+        black 60%,
+        rgba(0, 0, 0, 0.4) 85%,
+        transparent 100%
+    );
+
+    /* Propiedades de máscara adicionales necesarias */
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+
 }
 img{ 
     max-width: 100%; 
@@ -516,6 +541,11 @@ img{
     font-family: "Raleway", sans-serif;
     font-size: 35px;
 }
+.technology .title-edu{
+    font-family: "Raleway", sans-serif;
+    font-size: 55px;
+    color:#fff;
+}
 .front-end , .maquetacion , .back-end{
     border-radius: 20px;
     width: 100%;
@@ -722,24 +752,28 @@ img{
   justify-content: center;
   font-family: "Raleway", sans-serif;
 }
+.cont-msj h3{
+    font-family: "Raleway", sans-serif;
+    font-size: 55px;
+}
 .cont-msj img{
-  width: 120px;
+    width: 120px;
 }
 
 .cont-msj p{
-  width: 40%;
-  overflow: hidden;
-  font-family: "Raleway", sans-serif;
+    width: 40%;
+    overflow: hidden;
+    font-family: "Raleway", sans-serif;
 }
 
 .cont-icon{
-  background-color: #000;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding:50px 0;
+    background-color: #000;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
 }
 
 .cont-icon .fab{
@@ -771,7 +805,7 @@ img{
   color: #ffff;
 }
   /* ---------- Responsive ---------- */
-  @media (max-width: 900px){
+@media (max-width: 900px){
     .navlinks{ display: none; }
     .navbar{ padding: 22px 24px 0; }
     .panel{ padding: 0 24px; max-width: 100%; }
@@ -779,9 +813,9 @@ img{
     .deck-wrap{ right: 24px; bottom: 76px; width: calc(100vw - 48px); }
     .controls{ right: 24px; width: calc(100vw - 48px); }
     :root{ --card-w: 92px; --card-h: 124px; }
-  }
+}
 
-  @media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion: reduce){
     .bg-layer{ transition: opacity .4s linear; transform:none !important; }
     .card{ transition: opacity .3s linear; }
-  }
+}
