@@ -15,12 +15,22 @@
 
 *{ box-sizing: border-box; }
 
-html, body{ overflow-x: hidden;}
-body{
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
     margin: 0;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027); 
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /
+    min-height: 100vh;
+    background-color: #0F2027;
+    background: linear-gradient(rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.16)), url('fondo.avif') center/cover fixed no-repeat;
+    background-blend-mode: overlay;
+}
+
+main, header, .navbar, .home, .stage, .technology, #contact {
+    position: relative;
+    z-index: 1;
 }
 
 /*----------Header -------------*/
@@ -252,7 +262,7 @@ body.menu-open{
     /* Propiedad estándar (para compatibilidad futura) */
     mask-image: linear-gradient(
         to bottom,
-        black 60%,
+        black 65%,
         rgba(0, 0, 0, 0.4) 85%,
         transparent 100%
     );
@@ -527,6 +537,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
+  justify-content: center;
 }
 .herramientas{
     height: 100%; 

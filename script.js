@@ -31,7 +31,7 @@
       title: "El sabor de \nAlquisiras",
       desc: "Sitio web desarrollado para destacar la identidad de la marca, mejorar la experiencia del usuario y presentar sus productos de forma atractiva.",
       img: "img/mole.png"
-    },
+    },/*
     {
       eyebrow: "Cappadocia · Turkey",
       webUrl: "https://www.example.com/sirince-valley",
@@ -47,7 +47,7 @@
       title: "Saint\nAntonien",
       desc: "Escondido en los Alpes suizos, un retiro idílico para quienes buscan un refugio apartado del mundo. Senderismo en verano, esquí de fondo en invierno.",
       img: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=1600&auto=format&fit=crop"
-    }
+    }*/
   ];
 
   const bgPool = document.getElementById('bgPool');
